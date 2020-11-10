@@ -37,7 +37,7 @@ public class Test_iPhone extends TestSetup {
         for (WebElement el : iPhoneList) {
             el.getText();
             System.out.println(el.getText());
-            assertTrue(el.getText().contains("iPhone"));
+            assertTrue(el.getText().contains("iPhone"),"Ожидаемый результат: строка содержит 'iPhone'");
         }
     }
 

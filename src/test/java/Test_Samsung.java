@@ -26,7 +26,7 @@ public class Test_Samsung extends TestSetup {
 
 
     @Test
-    public void test_search_Samsung() throws InterruptedException {
+    public void test_search_Samsung()  {
 
         homePage
                 .open()
@@ -38,8 +38,8 @@ public class Test_Samsung extends TestSetup {
         for (WebElement el : samsungList) {
             el.getText();
             System.out.println(el.getText());
-            assertTrue(el.getText().toLowerCase().contains("samsung"));
+            assertTrue(el.getText().toLowerCase().contains("samsung"),"Ожидаемый результат: строка содержит 'samsung'");
         }
-//        Thread.sleep(5000);
+
     }
 }
